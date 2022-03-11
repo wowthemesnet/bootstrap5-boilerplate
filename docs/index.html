@@ -13,23 +13,18 @@
     
     <body>
         <!-- Navigation - desktop -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-none d-lg-block">
-            <div class="container-fluid">	<a class="navbar-brand" href="./">Plug&Play</a>
-
-                <button class="navbar-toggler"
-                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">	<span class="navbar-toggler-icon"></span>
-
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar navbar-desktop navbar-expand-lg navbar-dark fixed-top d-none d-lg-block">
+            <div class="container-fluid">
+                <img src="./img/plug_and_play_light.svg" alt="Plug & Play logo">
+                <div class="nav nav-secondary">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item nav-item-review">	<a class="nav-link active" aria-current="page" href="./write-a-review.html">Write a Review</a>
+                        <li class="nav-item nav-item-review">	<a class="nav-link" aria-current="page" href="./write-a-review.html">Write a Review</a>
 
                         </li>
                         <li class="nav-item nav-item-login">	<a class="nav-link" href="./login.html">Log in</a>
 
                         </li>
-                        <li class="nav-item nav-item-signup">	<a type="button" class="nav-link btn btn-primary position-relative" href="./signup.html">Sign up</a>
+                        <li class="nav-item nav-item-signup">	<a type="button" class="nav-link btn btn-outline-light" href="./signup.html">Sign up</a>
 
                         </li>
                     </ul>
@@ -37,7 +32,7 @@
             </div>
         </nav>
         <!-- Navigation - mobile -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-xs-block d-md-block d-lg-none">
+        <nav class="navbar navbar-mobile navbar-expand-lg navbar-light bg-light fixed-top d-xs-block d-md-block d-lg-none">
             <div class="container-fluid">	<a class="navbar-brand" href="./">Plug&Play</a>
 
                 <button class="navbar-toggler"
@@ -105,32 +100,28 @@
                 </div>
             </div>
         </nav>
-        <div class="container mt-5 mb-5">
-             <h1 class="display-3">Boilerplate Bootstrap 5+  with Gulp 4 </h1>
+        <main>
+            <section id="pap-home-hero" class="pap-hero-banner">
+                <div class="container">
+                    <div class="py-5 my-5">
+                        <div class="col-lg-6">
+                            	<h1 class="display-5 fw-bold">Managing your health has never been easier</h1>
 
-            <p class="lead">Basic5 is a Bootstrap 5+ boilerplate with Gulp4, cross-env, Sass, sourcemaps,
-                concat, CSS & HTML minification, uglify, image optimization, template partials,
-                BrowserSync.</p>
-            <p><a target="_blank" class="btn btn-primary" href="https://bootstrapstarter.com/template-basic5-bootstrap5-html/"
-                role="button">Documentation &raquo;</a>
-            </p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365451-d20e00c0ed23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                            <div class="d-grid gap-2 d-sm-flex">	<a class="link-search" href="#pap-search"><b>Search</b>, <b>Compare</b> and <b>Book a healthcare specialist</b></a>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365437-9f9d275b0db0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            </section>
+            <section id="pap-search">
+                <div class="container">
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-search">Find a Specialist</button>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579033060982-1bb5b083f4fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-            </div>
-        </div>
-        <footer class="footer container text-center">
-            <p>&copy; Bootstrap Basic5 Starter with Gulp</p>
-        </footer>
+            </section>
+        </main>
         <script src="./js/all.js"></script>
     </body>
 

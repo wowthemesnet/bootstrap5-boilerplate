@@ -1,19 +1,62 @@
-$theme-colors: (
-    "primary": blue,
-    "dark": #000000
-);
-
 @import "node_modules/bootstrap/scss/bootstrap";
 
+$theme-colors: (
+	"primary": var(--bs-white),
+	"dark": #000000
+);
+
+@font-face {
+	font-family: 'Raleway Regular';
+	src: url(./fonts/Raleway/Raleway-Regular.ttf) format('ttf');
+}
+
 body {
-    padding-top: 56px;
+	background-image: url(/img/banner-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	--bs-body-color: #fff;
+	font-family: 'Raleway Regular', sans-serif !important;
+}
+
+main {
+	display: flex;
+    flex-direction: column;
 }
 
 .footer {
-    margin-top: 3rem;
+	margin-top: 3rem;
 }
 
-.navbar {
-    border-bottom: 1px solid var(--bs-gray-100);
-    background: var(--bs-body-bg);
+.navbar-mobile {
+	border-bottom: 1px solid var(--bs-gray-100);
+	background-color: var(--bs-body-bg);
+}
+
+.nav-secondary .navbar-nav .nav-link {
+	color: var(--bs-white);
+}
+
+#pap-home-hero {
+
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+
+	.link-search {
+		color: var(--bs-white);
+		text-decoration: none;
+	}
+}
+
+#pap-search {
+
+	justify-content: flex-end;
+	padding: 2rem;
+	text-align: center;
+	border-top: 3px solid #63B094;
+	background-color: var(--bs-white);
+
+	.btn-search {
+		color: var(--bs-white);
+		background-color: #63B094;
+	}
 }
