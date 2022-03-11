@@ -1,40 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />    
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./img/icon.png" />
-    <title>Basic - Bootstrap 5 with Gulp 4</title>
-  </head>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="icon" href="./img/icon.png" />
+	<title>Plug&Play</title>
+</head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="./">Basic 5</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-            </li>
-        </ul>
-        </div>
-    </div>
-</nav>
+	<!-- Navigation - desktop -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-none d-lg-block">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="./">Plug&Play</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item nav-item-review">
+						<a class="nav-link active" aria-current="page" href="./write-a-review.html">Write a Review</a>
+					</li>
+					<li class="nav-item nav-item-login">
+						<a class="nav-link" href="./login.html">Log in</a>
+					</li>
+					<li class="nav-item nav-item-signup">
+						<a type="button" class="nav-link btn btn-primary position-relative" href="./signup.html">Sign up</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Navigation - mobile  -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-xs-block d-md-block d-lg-none">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="./">Plug&Play</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item nav-item-search">
+						<a class="nav-link active" aria-current="page" href="./search.html">Search</a>
+					</li>
+
+					<li class="nav-item dropdown nav-item-specialist">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							<b>Specialist</b> or <b>Practice</b>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Test1</a></li>
+							<li><a class="dropdown-item" href="#">Test2</a></li>
+							<li><a class="dropdown-item" href="#">Test3</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown nav-item-location">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							In <b>Location</b>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Test1</a></li>
+							<li><a class="dropdown-item" href="#">Test2</a></li>
+							<li><a class="dropdown-item" href="#">Test3</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown nav-item-insurer">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Via any <b>insurer</b>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Test1</a></li>
+							<li><a class="dropdown-item" href="#">Test2</a></li>
+							<li><a class="dropdown-item" href="#">Test3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
