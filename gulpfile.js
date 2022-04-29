@@ -4,7 +4,7 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const htmlmin = require('gulp-htmlmin');
 const cssmin = require('gulp-cssmin');
-const uglify = require('gulp-uglify');
+const terser = require("gulp-terser");
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
 const jsImport = require('gulp-js-import');
@@ -45,7 +45,7 @@ function js() {
             hideConsole: true
         }))
         .pipe(concat('all.js'))
-        .pipe(gulpIf(isProd, uglify()))
+        .pipe(gulpIf(isProd, terser()))
         .pipe(gulp.dest('docs/js'));
 }
 
